@@ -83,7 +83,7 @@ header{
   justify-content: space-between;
   align-items: center;  
   padding: 1rem 2rem;
-  background-color: var(--bg-primary-surface);
+  background: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navbar-menu{
@@ -112,13 +112,35 @@ header{
 }
 
 .navbar-end button{
-  padding: 0.5rem 1rem;
-  background-color: var(--color-primary);
-  color: var(--color-primary-contrast);
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  transition: background-color var(--transition-fast);
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--primary-hover) 100%);
+  color: var(--text-on-primary);
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(176, 60, 222, 0.18);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), opacity var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
 }
+
 .navbar-end button:hover{
-  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(176, 60, 222, 0.22);
+  background: linear-gradient(90deg, var(--primary-hover) 0%, var(--color-primary) 100%);
+}
+
+.navbar-end button:active{
+  transform: translateY(0) scale(0.98);
+  background-color: var(--primary-active);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.navbar-end button:focus-visible{
+  outline: none;
+  box-shadow: var(--focus-ring);
 }
