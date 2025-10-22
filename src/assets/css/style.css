@@ -1,7 +1,7 @@
 :root {
   --color-primary: #b03cde;
   --color-primary-contrast: #ffffff;
-  --font-sans: "Manashu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
   --bg: #ffffff;
@@ -9,53 +9,80 @@
   --radius-sm: 4px;
   --radius-md: 8px;
   --transition-fast: 200ms ease;
+  --bg-primary-surface: #020A18;
 
   --primary-hover: #9b30c8;
   --primary-active: #7f27a6;
   --text-on-primary: #ffffff;
   --text-muted: #6b7280;
   --text-strong: #0b1220;
-  --bg-primary-surface: rgba(176,60,222,0.08);
-  --primary-outline: rgba(176,60,222,0.18);
-  --focus-ring: 0 0 0 4px rgba(176,60,222,0.12);
+  --primary-outline: rgba(176, 60, 222, 0.18);
+  --focus-ring: 0 0 0 4px rgba(176, 60, 222, 0.12);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-   font-size: 16px;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary-surface);
+  color: var(--bg);
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-ul{
+
+ul {
   list-style: none;
 }
-img{
+
+img {
   max-width: 100%;
   display: block;
 }
-button{
+
+button {
   cursor: pointer;
   border: none;
   background: none;
-} 
-input, textarea{
+}
+
+input,
+textarea {
   outline: none;
   border: none;
   font-family: inherit;
 }
-button, input, textarea, select{
+
+button,
+input,
+textarea,
+select {
   font-family: inherit;
 }
 
+
+/* navbar */
+header{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 1rem 2rem;
+  background-color: var(--bg-primary-surface);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
