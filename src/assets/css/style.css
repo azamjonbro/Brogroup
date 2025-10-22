@@ -1,79 +1,61 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-primary: #b03cde;
+  --color-primary-contrast: #ffffff;
+  --font-sans: "Manashu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  --bg: #ffffff;
+  --text: #111827;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --transition-fast: 200ms ease;
+
+  --primary-hover: #9b30c8;
+  --primary-active: #7f27a6;
+  --text-on-primary: #ffffff;
+  --text-muted: #6b7280;
+  --text-strong: #0b1220;
+  --bg-primary-surface: rgba(176,60,222,0.08);
+  --primary-outline: rgba(176,60,222,0.18);
+  --focus-ring: 0 0 0 4px rgba(176,60,222,0.12);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+   font-size: 16px;
   line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+a{
+  text-decoration: none;
+  color: inherit;
 }
-a:hover {
-  color: #535bf2;
+ul{
+  list-style: none;
 }
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+img{
+  max-width: 100%;
+  display: block;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+button{
   cursor: pointer;
-  transition: border-color 0.25s;
+  border: none;
+  background: none;
+} 
+input, textarea{
+  outline: none;
+  border: none;
+  font-family: inherit;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
+button, input, textarea, select{
+  font-family: inherit;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
