@@ -1,5 +1,13 @@
 {
-  "name": "package.json",
+  "name": "brogroup-branding-digital-agency-html-template",
+  "description": "Brogroup | Branding & Digital Agency HTML Template. A modern and responsive HTML template for branding and digital agencies.",
+  "keywords": [
+    "branding",
+    "digital agency",
+    "HTML template",
+    "responsive design",
+    "modern"
+  ],
   "private": true,
   "version": "0.0.0",
   "type": "module",
