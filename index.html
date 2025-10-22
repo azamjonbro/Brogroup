@@ -1,13 +1,70 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>package.json</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="uz">
+<head>
+  <!-- eski codelar: charset, viewport, title, css, va hokazo -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brogroup</title>
+  <!-- boshqa eski meta va linklar -->
+  <meta name="description" content="Sayt tavsifi..." />
+
+  <!-- head ichiga qo'ying -->
+  <meta property="og:image" content="/images/placeholder.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
+  <meta property="og:image:alt" content="Descriptive image text" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/images/placeholder.png" />
+  <link rel="image_src" href="/images/placeholder.png" />
+
+  <script>
+  (function(){
+    var real = '/images/photo.jpg';
+    var placeholder = '/images/placeholder.png';
+
+    var img = new Image();
+    img.onload = function(){
+      updateMeta('property','og:image', real);
+      updateMeta('name','twitter:image', real);
+      updateMeta('property','og:image:width','1200');
+      updateMeta('property','og:image:height','800');
+      updateLinkImage(real);
+    };
+    img.onerror = function(){
+      // rasm topilmasa placeholder qoldiriladi (SEO tushmasin)
+    };
+    img.src = real;
+
+    function updateMeta(attr, key, value){
+      var sel = 'meta['+attr+'="'+key+'"]';
+      var m = document.head.querySelector(sel);
+      if(m) m.setAttribute('content', value);
+      else {
+        var mm = document.createElement('meta');
+        mm.setAttribute(attr, key);
+        mm.setAttribute('content', value);
+        document.head.appendChild(mm);
+      }
+    }
+
+    function updateLinkImage(href){
+      var l = document.head.querySelector('link[rel="image_src"]');
+      if(l) l.href = href;
+      else {
+        var link = document.createElement('link');
+        link.rel = 'image_src';
+        link.href = href;
+        document.head.appendChild(link);
+      }
+    }
+  })();
+  </script>
+
+<!-- boshqa eski skriptlar yoki stylesheetlar -->
+</head>
+<body>
+  <!-- kontent -->
+   <div id="app"></div>
+  <script src="./src/main.js" type="module"></script>
+</body>
 </html>
