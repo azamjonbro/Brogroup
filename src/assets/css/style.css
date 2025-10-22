@@ -86,3 +86,39 @@ header{
   background-color: var(--bg-primary-surface);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.navbar-menu{
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar a{
+  color: var(--bg);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+  position: relative;
+}
+.navbar a:after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: var(--bg);
+  transition: width var(--transition-fast);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.navbar a:hover:after{
+  width: 100%;
+}
+
+.navbar-end button{
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: background-color var(--transition-fast);
+}
+.navbar-end button:hover{
+  background-color: var(--primary-hover);
+}
