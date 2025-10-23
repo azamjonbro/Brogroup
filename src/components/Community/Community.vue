@@ -45,7 +45,7 @@
                     <h3>Hamkorlar</h3>
                     <p class="partners-desc">Loyihada ishtirok etgan tashkilotlar va sheriklar</p>
                 </div>
-                <PartnerSlider :partners="partners" />
+                <!-- <PartnerSlider :partners="partners" /> -->
             </section>
         </div>
     </section>
@@ -72,20 +72,45 @@ const partners = ref([
 ])
 </script>
 
+
+
 <style scoped>
 /* Base */
 .community {
     padding: 56px 16px;
-    color: #0f1724;
-   
+    color: var(--bg); /* Updated to use theme color */
+    background: var(--bg-primary-surface);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Container */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
+.community-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--bg); /* Updated for contrast */
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    margin: 6px 0 0;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.creator-card {
+    background: linear-gradient(180deg, var(--bg-primary-surface), rgba(4,14,32,0.9));
+    color: var(--bg);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+}
+
+.btn {
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--primary-hover) 100%);
+    color: var(--text-on-primary);
+    border-radius: var(--radius-md);
+    box-shadow: 0 6px 18px var(--primary-outline);
+    transition: var(--transition-fast);
 }
 
 /* Header */
