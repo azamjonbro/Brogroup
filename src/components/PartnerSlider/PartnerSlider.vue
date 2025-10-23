@@ -50,7 +50,7 @@ const slidesPerView = computed(() => {
 
 <style scoped>
 .partners {
-  background: white;
+
   padding: 18px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(18, 35, 70, 0.04);
