@@ -84,8 +84,20 @@ header{
   align-items: center;  
   padding: 1rem 2rem;
   background: none;
+  backdrop-filter: blur(10px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* border: 2px solid red; */
 }
+.nav_left{
+  /* padding-left: 20%; */
+  display: flex;
+  align-items: center;
+  /* width: 70%; */
+  /* gap: 1rem; */
+  justify-content: space-between;
+  /* border: 2px solid orange; */
+}
+
 .navbar-menu{
   display: flex;
   gap: 1.5rem;
@@ -109,6 +121,12 @@ header{
 }
 .navbar a:hover:after{
   width: 100%;
+}
+.navbar-end{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
 }
 
 .navbar-end button{
