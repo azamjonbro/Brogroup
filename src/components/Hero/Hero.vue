@@ -321,7 +321,8 @@ export default {
 
 @media (max-width: 600px) {
     .hero {
-        min-height: 55vh;
+        max-height: 55vh;
+        border: 3px solid red;
     }
     .hero-content {
         padding: 2.25rem 1rem;
