@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BROGROUP — Murakkab tizimlarni oddiy yechimlarga aylantiramiz</title>
+    <meta name="description"
+        content="BROGROUP — CRM, avtomatlashtirish va AI yechimlari. Hackathon gʼoyalaridan real mahsulotlargacha." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <a class="brand" href="#">
+                <div class="logo">BG</div>
+                <div>
+                    <div style="font-weight:800">BROGROUP</div>
+                    <div style="font-size:12px;color:var(--muted);margin-top:3px">CRM • Avtomatlashtirish • AI</div>
+                </div>
+            </a>
+
+            <nav>
+                <a href="#services">Xizmatlar</a>
+                <a href="#projects">Loyihalar</a>
+                <a href="#team">Jamoa</a>
+                <a class="cta" href="#contact">Bogʻlanish</a>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-card">
+                <h1>Murakkab tizimlarni <span style="color:rgb(var(--accent-1))">oddiy</span> yechimlarga aylantiramiz.
+                </h1>
+                <p class="lead">BROGROUP — CRM va avtomatlashtirishga ixtisoslashgan 10+ mutaxassisdən iborat jamoa.
+                    Hackathon g'oyalaridan ishchi mahsulotlargacha — tez, aniq va natijaviy.</p>
+
+                <div class="ctas">
+                    <button class="btn primary"
+                        onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Start
+                        Project</button>
+                    <button class="btn"
+                        onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Portfolio</button>
+                </div>
+
+                <div class="pills" aria-hidden="true">
+                    <div class="pill">SMARTCRM</div>
+                    <div class="pill">SAFONON</div>
+                    <div class="pill">AI Agents</div>
+                    <div class="pill">Node.js • Vue</div>
+                </div>
+
+                <div style="margin-top:18px;color:var(--muted);font-size:13px">Jamoa yetakchisi:
+                    <strong>Azamjonbro</strong> — 4 yillik front-end & team leader, Algoritm o'quv markazida teacher va
+                    faol freelancer.</div>
+            </div>
+
+            <aside class="side-card floaty" aria-labelledby="hackTitle">
+                <h3 id="hackTitle">Hackathon yutuqlari</h3>
+                <p style="color:var(--muted);margin:0">Samarqand AI Hackathon — TOP 10; Nis IT School — 2-o'rin;
+                    Agrobank (500,000,000 so‘m) — hozirgi ishtirok.</p>
+
+                <div class="stat-row" style="margin-top:12px">
+                    <div class="stat">10+ Aʼzolar</div>
+                    <div class="stat">Top 10 / Top 3</div>
+                    <div class="stat">Hackathon-ready</div>
+                </div>
+
+                <div style="margin-top:12px;color:var(--muted);font-size:13px">Mashhur loyihalar:
+                    <strong>OTELIA</strong> (HotelAI), <strong>INVESTID</strong> (Investment dashboard).</div>
+            </aside>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section">
+            <div class="title">
+                <h2 style="margin:0">Xizmatlar</h2>
+                <div style="color:var(--muted);font-size:14px">CRM, avtomatlashtirish va AI yechimlari</div>
+            </div>
+
+            <div class="grid">
+                <!-- CRM & Business Automation -->
+                <div class="card">
+                    <div style="margin-bottom:12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                            stroke="rgb(var(--accent-1))" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-grid">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="25" y="3" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="25" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="25" width="7" height="7"></rect>
+                            <rect x="14" y="25" width="7" height="7"></rect>
+                            <rect x="25" y="25" width="7" height="7"></rect>
+                        </svg>
+                    </div>
+                    <h4>CRM & Business Automation</h4>
+                    <p>Mebel, sanoat va chakana savdo uchun moslashtirilgan SMARTCRM va SAFONON kabi tizimlar —
+                        kirim-chiqim, buyurtma va foyda hisoblash.</p>
+                </div>
+
+                <!-- AI Agentlar & Analitika -->
+                <div class="card">
+                    <div style="margin-bottom:12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                            stroke="rgb(var(--accent-2))" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-activity">
+                            <polyline points="22 12 18 20 14 12 10 20 6 12"></polyline>
+                        </svg>
+                    </div>
+                    <h4>AI Agentlar & Analitika</h4>
+                    <p>OTELIA kabi AI agentlar — mehmonxona jarayonlarini avtomatlashtirish, qo‘ng‘iroqlarni deep-analiz
+                        va xodim samaradorligini oshirish.</p>
+                </div>
+
+                <!-- Hackathon & Rapid MVP -->
+                <div class="card">
+                    <div style="margin-bottom:12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                            stroke="rgb(var(--accent-1))" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-flag">
+                            <path d="M3 3v28"></path>
+                            <path d="M3 3c4 0 8 3 12 0s8 3 12 0"></path>
+                        </svg>
+                    </div>
+                    <h4>Hackathon & Rapid MVP</h4>
+                    <p>Tez prototiplash, MVP ishlab chiqish va demo tayyorlash — 48 soatlik sprints orqali natijaviy
+                        yechimlar.</p>
+                </div>
+
+                <!-- Frontend & Desktop -->
+                <div class="card">
+                    <div style="margin-bottom:12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                            stroke="rgb(var(--accent-2))" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-monitor">
+                            <rect x="2" y="3" width="28" height="20" rx="2" ry="2"></rect>
+                            <line x1="8" y1="27" x2="24" y2="27"></line>
+                            <line x1="16" y1="23" x2="16" y2="27"></line>
+                        </svg>
+                    </div>
+                    <h4>Frontend & Desktop</h4>
+                    <p>Electron + Vue bilan desktop ilovalar, zamonaviy front-end arxitektura va intuitiv UI.</p>
+                </div>
+
+                <!-- Backend & Infra -->
+                <div class="card">
+                    <div style="margin-bottom:12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                            stroke="rgb(var(--accent-1))" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-server">
+                            <rect x="2" y="3" width="28" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="13" width="28" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="23" width="28" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="7" x2="6.01" y2="7"></line>
+                            <line x1="6" y1="17" x2="6.01" y2="17"></line>
+                            <line x1="6" y1="27" x2="6.01" y2="27"></line>
+                        </svg>
+                    </div>
+                    <h4>Backend & Infra</h4>
+                    <p>NodeJS, Express, MongoDB, konteynerizatsiya, CI/CD va monitoring — ishonchli backend echimlar.
+                    </p>
+                </div>
+
+                <!-- Custom Integrations -->
+                <div class="card">
+                    <div style="margin-bottom:12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
+                            stroke="rgb(var(--accent-2))" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-link">
+                            <path d="M10 13a5 5 0 0 1 7-7l4 4a5 5 0 0 1-7 7l-4-4z"></path>
+                            <path d="M14 19a5 5 0 0 1-7 0l-4-4a5 5 0 0 1 7-7l4 4z"></path>
+                        </svg>
+                    </div>
+                    <h4>Custom Integrations</h4>
+                    <p>Payment, notification, SMS, analytics integratsiyalari va maxsus API echimlar.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="projects" class="section">
+            <div class="title">
+                <h2 style="margin:0">Asosiy loyihalar</h2>
+                <div style="color:var(--muted);font-size:14px">Bizning real ishlagan mahsulotlar</div>
+            </div>
+
+            <div class="projects">
+                <div class="proj">
+                    <svg width="100%" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="25" fill="rgb(var(--accent-1))" opacity="0.2" />
+                        <circle cx="30" cy="30" r="10" fill="rgb(var(--accent-1))" />
+                        <text x="70" y="37" fill="var(--text)" font-size="20" font-weight="700"
+                            font-family="sans-serif">SMARTCRM</text>
+                    </svg>
+                    <div class="tech">Electron • Vue • NodeJS • MongoDB</div>
+                    <p style="color:var(--muted);margin-top:6px">
+                        Mebel va sanoat qurilishidagi ombor hisobini boshqaruvchi tizim — kirim/chiqim, zakaz
+                        monitoring, har-bir zakaz bo‘yicha xarajat va foyda hisoblash.
+                    </p>
+                </div>
+
+                <div class="proj">
+                    <svg width="100%" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="10" width="40" height="40" fill="rgb(var(--accent-2))" opacity="0.2" />
+                        <rect x="20" y="20" width="20" height="20" fill="rgb(var(--accent-2))" />
+                        <text x="70" y="37" fill="var(--text)" font-size="20" font-weight="700"
+                            font-family="sans-serif">SAFONON</text>
+                    </svg>
+                    <div class="tech">Vue • Express • MongoDB</div>
+                    <p style="color:var(--muted);margin-top:6px">
+                        Nonvoyxona tarmoqlari uchun avtomatlashtirish — sotuv, rollar, kirim-chiqim va filiallar
+                        boshqaruvi.
+                    </p>
+                </div>
+
+                <div class="proj">
+                    <svg width="100%" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="30,10 50,30 30,50 10,30" fill="rgb(var(--accent-1))" opacity="0.2" />
+                        <polygon points="30,20 40,30 30,40 20,30" fill="rgb(var(--accent-1))" />
+                        <text x="70" y="37" fill="var(--text)" font-size="20" font-weight="700"
+                            font-family="sans-serif">OTELIA</text>
+                    </svg>
+                    <div class="tech">AI Agent • Monitoring • Analytics</div>
+                    <p style="color:var(--muted);margin-top:6px">
+                        Mehmonxonalar jarayonlarini kuzatib boruvchi AI agent — buyurtma, xodimlar vazifasi, muammo
+                        aniqlash va takliflar.
+                    </p>
+                </div>
+
+                <div class="proj">
+                    <svg width="100%" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 50 L30 10 L50 50 Z" fill="rgb(var(--accent-2))" opacity="0.2" />
+                        <path d="M15 45 L30 15 L45 45 Z" fill="rgb(var(--accent-2))" />
+                        <text x="70" y="37" fill="var(--text)" font-size="20" font-weight="700"
+                            font-family="sans-serif">INVESTID</text>
+                    </svg>
+                    <div class="tech">Dashboard • Investor Tools • Analytics</div>
+                    <p style="color:var(--muted);margin-top:6px">
+                        Investorlar uchun startap loyihalar katalogi va investitsiya jarayonini boshqaruvchi dashboard —
+                        Nis IT School hackathon 2-oʻrin.
+                    </p>
+                </div>
+
+                <div class="proj">
+                    <svg width="100%" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="30" cy="30" rx="20" ry="10" fill="rgb(var(--accent-1))" opacity="0.2" />
+                        <ellipse cx="30" cy="30" rx="10" ry="5" fill="rgb(var(--accent-1))" />
+                        <text x="70" y="37" fill="var(--text)" font-size="18" font-weight="700"
+                            font-family="sans-serif">Qo‘ng‘iroq-CRM</text>
+                    </svg>
+                    <div class="tech">Audio NLP • AI • CRM</div>
+                    <p style="color:var(--muted);margin-top:6px">
+                        Qo‘ng‘iroqlarni yozib, deep-analiz qiluvchi tizim — mijoz ehtiyoji, savdo imkoniyati va xodim
+                        bahosi uchun tahlil.
+                    </p>
+                </div>
+
+                <div class="proj">
+                    <svg width="100%" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="40" height="20" fill="rgb(var(--accent-2))" opacity="0.2" />
+                        <rect x="20" y="25" width="20" height="10" fill="rgb(var(--accent-2))" />
+                        <text x="70" y="37" fill="var(--text)" font-size="18" font-weight="700"
+                            font-family="sans-serif">Agrobank Hackathon</text>
+                    </svg>
+                    <div class="tech">Banking • Fintech • AI</div>
+                    <p style="color:var(--muted);margin-top:6px">
+                        500,000,000 so'mli hackathon uchun yechim — bank sektorida avtomatlashtirish va AI
+                        imkoniyatlari.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TEAM -->
+        <section id="team" class="section">
+            <div class="title">
+                <h2 style="margin:0">Jamoa</h2>
+                <div style="color:var(--muted);font-size:14px">10+ iqtidorli mutaxassis — frontend, backend, AI, design
+                </div>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 360px;gap:16px;align-items:start">
+                <div>
+                    <div class="team-grid">
+                        <div class="member">
+                            <div class="avatar">Az</div>
+                            <div>
+                                <h5 style="margin:0">Azamjonbro — Team Leader</h5>
+                                <p style="margin:4px 0 0 0;color:var(--muted)">4 yillik front-end dasturchi, Algoritm
+                                    o'quv markazida teacher, faol freelancer.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="member">
+                            <div class="avatar">SO</div>
+                            <div>
+                                <h5 style="margin:0">Sohib — Backend</h5>
+                                <p style="margin:4px 0 0 0;color:var(--muted)">NodeJS, Express, MongoDB mutaxassisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="avatar">AN</div>
+                            <div>
+                                <h5 style="margin:0">Anna — DevOps / AI</h5>
+                                <p style="margin:4px 0 0 0;color:var(--muted)">CI/CD, infra va AI integratsiyalar.</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <!-- <div style="margin-top:16px">
+                        <h4 style="margin:0 0 8px 0">Nega biz?</h4>
+                        <p style="color:var(--muted);margin:0">Biz hackathon tajribasini va sanoat yechimlarini
+                            birlashtiramiz — tezkor prototiplash va barqaror mahsulot yaratish birgalikda.</p>
+                        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+                            <div class="badge">Hackathon-ready</div>
+                            <div class="badge">CRM Experts</div>
+                            <div class="badge">Automation</div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- <aside>
+                    <div
+                        style="padding:14px;border-radius:12px;border:1px solid var(--glass-border);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))">
+                        <h4 style="margin:0 0 8px 0">Hamkorlik</h4>
+                        <p style="color:var(--muted);margin:0 0 12px 0">Jamoamizni hackathon yoki loyiha uchun yollash —
+                            tezkor sprint jamoasi tashkil qilamiz.</p>
+                        <button class="btn primary"
+                            onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'})">Aloqa</button>
+                    </div>
+                </aside> -->
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="title">
+                <h2 style="margin:0">Bogʻlanish</h2>
+                <div style="color:var(--muted);font-size:14px">Loyiha tafsilotlari va hamkorlik uchun</div>
+            </div>
+
+            <div class="contact">
+                <form id="contact-form" class="form" onsubmit="submitForm(event)">
+                    <div class="field">
+                        <label for="name">Ism</label>
+                        <input id="name" type="text" placeholder="Ismingiz" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="you@domain.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Xabar</label>
+                        <textarea id="message" placeholder="Loyiha haqida qisqacha — hackathon, budget, deadline..."
+                            required></textarea>
+                    </div>
+
+                    <div style="display:flex;gap:10px;align-items:center">
+                        <button class="btn primary" type="submit">Yuborish</button>
+                        <div style="color:var(--muted);font-size:13px">Yoki elektron pochta: <strong
+                                style="color:#fff">hello@brogroup.dev</strong></div>
+                    </div>
+
+                    <div
+                        style="margin-top:12px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center">
+                        <div>Telegram: @brogroup</div>
+                        <div>© BROGROUP</div>
+                    </div>
+                </form>
+
+                <aside style="display:flex;flex-direction:column;gap:12px">
+                    <div
+                        style="padding:14px;border-radius:12px;border:1px solid var(--glass-border);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))">
+                        <h4 style="margin:0 0 8px 0">Tezkor ma'lumot</h4>
+                        <p style="color:var(--muted);margin:0">Hackathonga tayyorgarlik: sprint jamoani 24 soat ichida
+                            tashkil qilamiz. SMARTCRM va SAFONON kabi yechimlarimiz mavjud.</p>
+                    </div>
+
+                    <div
+                        style="padding:14px;border-radius:12px;border:1px solid var(--glass-border);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))">
+                        <h4 style="margin:0 0 8px 0">Pricing</h4>
+                        <p style="color:var(--muted);margin:0">Demo paketlar va maxsus takliflar — loyiha talabiga qarab
+                            narx tuzamiz.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <footer>
+            Designed & built by BROGROUP — CRM, Automation & AI.
+        </footer>
+    </div>
+
+    <script>
+        // Simple form handling (no backend). Customize to POST to your API endpoint.
+        function submitForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            if (!name || !email || !message) {
+                alert('Iltimos, barcha maydonlarni toʻldiring.');
+                return;
+            }
+            // Example: replace with fetch('/api/contact') to send to your server.
+            alert('Xabar yuborildi! Biz siz bilan 24 soat ichida bogʻlanamiz.');
+            e.target.reset();
+        }
+
+        // Small accessibility: smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function (e) {
+                const target = this.getAttribute('href').slice(1);
+                if (!target) return;
+                const el = document.getElementById(target);
+                if (el) {
+                    e.preventDefault();
+                    el.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
