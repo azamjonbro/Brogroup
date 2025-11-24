@@ -51,7 +51,6 @@
             </nav>
         </header>
 
-        <!-- HERO -->
         <section class="hero">
             <div class="hero-card">
                 <h1>Murakkab tizimlarni <span style="color:rgb(var(--accent-1))">oddiy</span> yechimlarga aylantiramiz.
@@ -95,7 +94,6 @@
             </aside>
         </section>
 
-        <!-- SERVICES -->
         <section id="services" class="section">
             <div class="title">
                 <h2 style="margin:0">Xizmatlar</h2>
@@ -103,7 +101,6 @@
             </div>
 
             <div class="grid">
-                <!-- CRM & Business Automation -->
                 <div class="card">
                     <div style="margin-bottom:12px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
@@ -125,7 +122,6 @@
                         kirim-chiqim, buyurtma va foyda hisoblash.</p>
                 </div>
 
-                <!-- AI Agentlar & Analitika -->
                 <div class="card">
                     <div style="margin-bottom:12px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
@@ -139,7 +135,6 @@
                         va xodim samaradorligini oshirish.</p>
                 </div>
 
-                <!-- Hackathon & Rapid MVP -->
                 <div class="card">
                     <div style="margin-bottom:12px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
@@ -154,7 +149,6 @@
                         yechimlar.</p>
                 </div>
 
-                <!-- Frontend & Desktop -->
                 <div class="card">
                     <div style="margin-bottom:12px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
@@ -169,7 +163,6 @@
                     <p>Electron + Vue bilan desktop ilovalar, zamonaviy front-end arxitektura va intuitiv UI.</p>
                 </div>
 
-                <!-- Backend & Infra -->
                 <div class="card">
                     <div style="margin-bottom:12px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
@@ -188,7 +181,6 @@
                     </p>
                 </div>
 
-                <!-- Custom Integrations -->
                 <div class="card">
                     <div style="margin-bottom:12px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"
@@ -301,7 +293,6 @@
         </section>
 
 
-        <!-- TEAM -->
         <section id="team" class="section">
             <div class="title">
                 <h2 style="margin:0">Jamoa</h2>
@@ -363,7 +354,6 @@
             </div>
         </section>
 
-        <!-- CONTACT -->
         <section id="contact" class="section">
             <div class="title">
                 <h2 style="margin:0">Bogʻlanish</h2>
@@ -423,7 +413,6 @@
     </div>
 
     <script>
-        // Simple form handling (no backend). Customize to POST to your API endpoint.
         function submitForm(e) {
             e.preventDefault();
             const name = document.getElementById('name').value.trim();
@@ -433,12 +422,9 @@
                 alert('Iltimos, barcha maydonlarni toʻldiring.');
                 return;
             }
-            // Example: replace with fetch('/api/contact') to send to your server.
             alert('Xabar yuborildi! Biz siz bilan 24 soat ichida bogʻlanamiz.');
             e.target.reset();
         }
-
-        // Small accessibility: smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', function (e) {
                 const target = this.getAttribute('href').slice(1);
